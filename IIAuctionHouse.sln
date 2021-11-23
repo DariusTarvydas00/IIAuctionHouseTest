@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.WebApi", "IIAuctionHouse.WebApi\IIAuctionHouse.WebApi.csproj", "{1B79E684-9807-47F1-8A32-93647EBF065A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Core", "IIAuctionHouse.Core\IIAuctionHouse.Core.csproj", "{349F3B43-7FD4-4049-9750-4E4A732444C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A1B7750E-8C25-4AE2-BBA5-AAF6B7894AFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core-Test", "Core-Test", "{E4C91F01-E80D-4FFD-9D84-0C18ADBAF8EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D3284F15-5E93-4349-9C47-D6266D045477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Domain", "IIAuctionHouse.Domain\IIAuctionHouse.Domain.csproj", "{ED742ECC-A434-4250-96FB-0C6488C7B15E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4C9F2EFD-6BA8-405C-9D88-321B61CD2D3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure-Test", "Infrastructure-Test", "{E7C71241-35E3-4033-89D2-6A184B7C9AC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI-Test", "UI-Test", "{BA407EA6-A98B-4FE7-9220-A7F5CA66DC1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Core.Test", "Core-Test\IIAuctionHouse.Core.Test\IIAuctionHouse.Core.Test.csproj", "{183F9751-4291-41EA-A2AF-D5D2AF415C77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Domain.Test", "Core-Test\IIAuctionHouse.Domain.Test\IIAuctionHouse.Domain.Test.csproj", "{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B79E684-9807-47F1-8A32-93647EBF065A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B79E684-9807-47F1-8A32-93647EBF065A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B79E684-9807-47F1-8A32-93647EBF065A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B79E684-9807-47F1-8A32-93647EBF065A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{349F3B43-7FD4-4049-9750-4E4A732444C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{349F3B43-7FD4-4049-9750-4E4A732444C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{349F3B43-7FD4-4049-9750-4E4A732444C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{349F3B43-7FD4-4049-9750-4E4A732444C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED742ECC-A434-4250-96FB-0C6488C7B15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED742ECC-A434-4250-96FB-0C6488C7B15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED742ECC-A434-4250-96FB-0C6488C7B15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED742ECC-A434-4250-96FB-0C6488C7B15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183F9751-4291-41EA-A2AF-D5D2AF415C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183F9751-4291-41EA-A2AF-D5D2AF415C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183F9751-4291-41EA-A2AF-D5D2AF415C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183F9751-4291-41EA-A2AF-D5D2AF415C77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{349F3B43-7FD4-4049-9750-4E4A732444C8} = {A1B7750E-8C25-4AE2-BBA5-AAF6B7894AFE}
+		{1B79E684-9807-47F1-8A32-93647EBF065A} = {D3284F15-5E93-4349-9C47-D6266D045477}
+		{ED742ECC-A434-4250-96FB-0C6488C7B15E} = {A1B7750E-8C25-4AE2-BBA5-AAF6B7894AFE}
+		{183F9751-4291-41EA-A2AF-D5D2AF415C77} = {E4C91F01-E80D-4FFD-9D84-0C18ADBAF8EE}
+		{334A0BE0-5B27-4702-8065-DF9C1BDE5DB1} = {E4C91F01-E80D-4FFD-9D84-0C18ADBAF8EE}
+	EndGlobalSection
+EndGlobal
