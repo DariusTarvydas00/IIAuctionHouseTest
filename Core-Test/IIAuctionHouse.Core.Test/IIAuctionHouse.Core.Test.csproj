@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models" />
+      <ProjectReference Include="..\..\IIAuctionHouse.Core\IIAuctionHouse.Core.csproj" />
     </ItemGroup>
 
 </Project>
