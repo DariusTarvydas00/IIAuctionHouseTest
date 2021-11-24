@@ -4,19 +4,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.WebApi", "II
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Core", "IIAuctionHouse.Core\IIAuctionHouse.Core.csproj", "{349F3B43-7FD4-4049-9750-4E4A732444C8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A1B7750E-8C25-4AE2-BBA5-AAF6B7894AFE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-Core", "IIAuctionHouse-Core", "{A1B7750E-8C25-4AE2-BBA5-AAF6B7894AFE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core-Test", "Core-Test", "{E4C91F01-E80D-4FFD-9D84-0C18ADBAF8EE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-Core-Test", "IIAuctionHouse-Core-Test", "{E4C91F01-E80D-4FFD-9D84-0C18ADBAF8EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D3284F15-5E93-4349-9C47-D6266D045477}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-UI", "IIAuctionHouse-UI", "{D3284F15-5E93-4349-9C47-D6266D045477}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Domain", "IIAuctionHouse.Domain\IIAuctionHouse.Domain.csproj", "{ED742ECC-A434-4250-96FB-0C6488C7B15E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4C9F2EFD-6BA8-405C-9D88-321B61CD2D3B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-Infrastructure", "IIAuctionHouse-Infrastructure", "{4C9F2EFD-6BA8-405C-9D88-321B61CD2D3B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure-Test", "Infrastructure-Test", "{E7C71241-35E3-4033-89D2-6A184B7C9AC4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-Infrastructure-Test", "IIAuctionHouse-Infrastructure-Test", "{E7C71241-35E3-4033-89D2-6A184B7C9AC4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI-Test", "UI-Test", "{BA407EA6-A98B-4FE7-9220-A7F5CA66DC1B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IIAuctionHouse-UI-Test", "IIAuctionHouse-UI-Test", "{BA407EA6-A98B-4FE7-9220-A7F5CA66DC1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIAuctionHouse.Core.Test", "Core-Test\IIAuctionHouse.Core.Test\IIAuctionHouse.Core.Test.csproj", "{183F9751-4291-41EA-A2AF-D5D2AF415C77}"
 EndProject
