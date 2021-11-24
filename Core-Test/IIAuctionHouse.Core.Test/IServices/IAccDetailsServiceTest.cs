@@ -6,19 +6,19 @@ using Xunit;
 
 namespace IIAuctionHouse.Core.Test.IServices
 {
-    public class IAccDetailsTest
+    public class IAccDetailsServiceTest
     {
-        private readonly AccDetails _accDetails;
+        private readonly AccDetails _accDetailsService;
 
-        public IAccDetailsTest()
+        public IAccDetailsServiceTest()
         {
-            _accDetails = new AccDetails();
+            _accDetailsService = new AccDetails();
         }
 
         [Fact]
         public void IAccountDetails_IsAvailable()
         {
-            var accDetails = new Mock<IAccDetailsTest>().Object;
+            var accDetails = new Mock<IAccDetailsServiceTest>().Object;
             Assert.NotNull(accDetails);
         }
 
@@ -37,7 +37,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void Address_WithNoParam_Exists()
         {
-            Assert.True(_accDetails.GetType().GetProperty("Address") != null);
+            Assert.True(_accDetailsService.GetType().GetProperty("Address") != null);
         }
     }
 }
