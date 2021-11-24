@@ -56,7 +56,7 @@ namespace IIAuctionHouse.Core.Test.Models
             {
                 Assert.True(_user.GetType().GetProperty("FirstName") != null);
             }
-            
+
             [Fact]
             // Checks if FirstName can be assigned
             public void User_SetFirstName_StoresFirstName()
