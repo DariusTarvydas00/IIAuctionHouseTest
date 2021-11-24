@@ -5,7 +5,7 @@ namespace Core.IServices
 {
     public interface IAddressService
     {
-        List<Address> GetAddresses();
+        List<Address> GetAllAddresses();
         Address GetAddressById(int id);
         Address DeleteAddress(int id);
         Address UpdateAddress(Address address);
