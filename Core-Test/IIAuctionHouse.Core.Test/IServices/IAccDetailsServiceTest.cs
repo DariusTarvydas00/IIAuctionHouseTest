@@ -26,7 +26,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void GetAllAccDetails_WithNoParam_ReturnListOfAllAddresses()
         {
-            var mock = new Mock<IAccDetails>();
+            var mock = new Mock<IAccDetailsService>();
             var fakeAccDetailsList = new List<AccDetails>();
             mock.Setup(s => s.GetAllAccDetails()).Returns(fakeAccDetailsList);
             var service = mock.Object;
