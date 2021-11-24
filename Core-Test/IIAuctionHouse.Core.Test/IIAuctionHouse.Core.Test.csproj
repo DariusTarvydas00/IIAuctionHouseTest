@@ -24,4 +24,9 @@
       <ProjectReference Include="..\..\IIAuctionHouse.Core\IIAuctionHouse.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="IServices\IUserServiceTest.cs" />
+      <Compile Remove="IServices\IProprietaryServiceTest.cs" />
+    </ItemGroup>
+
 </Project>
