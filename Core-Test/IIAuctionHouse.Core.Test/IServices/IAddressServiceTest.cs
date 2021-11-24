@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Core.IServices;
 using Core.Models;
@@ -12,7 +11,7 @@ namespace IIAuctionHouse.Core.Test.IServices
     {
         // Checks if Address Object exists
         [Fact]
-        public void IAddressSerVice_IsAvailable()
+        public void IAddressService_IsAvailable()
         {
             var addressService = new Mock<IAddressService>().Object;
             Assert.NotNull(addressService);
@@ -20,13 +19,13 @@ namespace IIAuctionHouse.Core.Test.IServices
 
         // Checks if GetAddress method return a list
         [Fact]
-        public void GetAddresses_WithNoParam_ReturnsListOfAllAddresses()
+        public void GetAllAddresses_WithNoParam_ReturnsListOfAllAddresses()
         {
             var mock = new Mock<IAddressService>();
             var fakeAddressList = new List<Address>();
-            mock.Setup(s => s.GetAddresses()).Returns(fakeAddressList);
+            mock.Setup(s => s.GetAllAddresses()).Returns(fakeAddressList);
             var service = mock.Object;
-            Assert.Equal(fakeAddressList, service.GetAddresses());
+            Assert.Equal(fakeAddressList, service.GetAllAddresses());
         }
 
         // Checks if GetAddressById return correct address information by Id
