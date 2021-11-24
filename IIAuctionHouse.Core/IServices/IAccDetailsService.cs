@@ -3,7 +3,7 @@ using Core.Models;
 
 namespace Core.IServices
 {
-    public interface IAccDetails
+    public interface IAccDetailsService
     {
         List<AccDetails> GetAllAccDetails();
     }
