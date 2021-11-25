@@ -8,6 +8,6 @@ namespace Core.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public AccDetails AccDetails { get; set; }
-        public List<Proprietary> Proprietaries { get; set; }
+        public Proprietary Proprietaries { get; set; }
     }
 }
