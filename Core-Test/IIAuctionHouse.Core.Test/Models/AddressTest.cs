@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection;
-using Core.Models;
+﻿using Core.Models;
 using Xunit;
 
 namespace IIAuctionHouse.Core.Test.Models
