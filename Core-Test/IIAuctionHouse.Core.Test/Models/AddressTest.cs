@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.Reflection;
-using Core.Models;
+﻿using Core.Models;
 using Xunit;
 
 namespace IIAuctionHouse.Core.Test.Models
@@ -8,7 +6,7 @@ namespace IIAuctionHouse.Core.Test.Models
     public class AddressTest
     {
         private Address _address;
-        public AddressTest()
+        public AddressTest() 
         {
             _address = new Address();
         }
