@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Core.IServices;
+using Core.IAddressServices;
 using Core.Models;
 using Moq;
 using Xunit;
@@ -10,9 +9,9 @@ namespace IIAuctionHouse.Core.Test.IServices
 {
     public class IAddressServiceTest
     {
-        // Checks if Address Object exists
+        // Checks if Address Service Class is not empty
         [Fact]
-        public void IAddressSerVice_IsAvailable()
+        public void IAddressService_IsAvailable()
         {
             var addressService = new Mock<IAddressService>().Object;
             Assert.NotNull(addressService);
