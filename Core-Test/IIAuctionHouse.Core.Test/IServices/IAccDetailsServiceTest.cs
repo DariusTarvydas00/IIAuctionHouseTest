@@ -10,15 +10,12 @@ namespace IIAuctionHouse.Core.Test.IServices
 {
     public class IAccDetailsServiceTest
     {
-<<<<<<< HEAD:Core-Test/IIAuctionHouse.Core.Test/IServices/IAccDetailsServiceTest.cs
         private readonly AccDetails _accDetailsService;
 
         public IAccDetailsServiceTest()
         {
             _accDetailsService = new AccDetails();
         }
-=======
->>>>>>> IAccDetailsTest:Core-Test/IIAuctionHouse.Core.Test/IServices/IAccDetailsTest.cs
 
         // Checks if IAccDetails is not exists
         [Fact]
@@ -43,7 +40,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void GetAccDetails_ById_ReturnsAddress()
         {
-            var mock = new Mock<IAccDetails>();
+            var mock = new Mock<IAccDetailsService>();
             var fakeAccDetailsList = new List<AccDetails>();
             var fakeAccDetails = new AccDetails()
             {
@@ -72,7 +69,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void DeleteAccDetails_ById_AccDetailsIsDeleted()
         {
-            var mock = new Mock<IAccDetails>();
+            var mock = new Mock<IAccDetailsService>();
             var fakeAccDetailsList = new List<AccDetails>();
             var fakeAccDetails = new AccDetails()
             {
@@ -92,10 +89,8 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void AccDetails_NewAccDetails_IsCreatedAndAdded()
         {
-<<<<<<< HEAD:Core-Test/IIAuctionHouse.Core.Test/IServices/IAccDetailsServiceTest.cs
             Assert.True(_accDetailsService.GetType().GetProperty("Address") != null);
-=======
-            var mock = new Mock<IAccDetails>();
+            var mock = new Mock<IAccDetailsService>();
             var fakeAccDetailsList = new List<AccDetails>();
             var fakeAccDetails1 = new AccDetails()
             {
@@ -115,7 +110,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         [Fact]
         public void UpdateAccDetails_AccDetails_AccDetailsIsUpdated()
         {
-            var mock = new Mock<IAccDetails>();
+            var mock = new Mock<IAccDetailsService>();
             var fakeAccDetailsList = new List<AccDetails>();
             var fakeAccDetails1 = new AccDetails()
             {
@@ -137,7 +132,6 @@ namespace IIAuctionHouse.Core.Test.IServices
             mock.Setup(s => s.UpdateAccDetails(It.IsAny<AccDetails>())).Returns(() => updateFakeAccDetails1);
             var service = mock.Object;
             Assert.Equal(fakeAccDetails2, service.UpdateAccDetails(fakeAccDetails2));
->>>>>>> IAccDetailsTest:Core-Test/IIAuctionHouse.Core.Test/IServices/IAccDetailsTest.cs
         }
     }
 }
