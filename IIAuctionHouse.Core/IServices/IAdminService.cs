@@ -7,7 +7,7 @@ namespace Core.IServices
     {
         List<Admin> GetAllAdmins();
         Admin GetAdminById(int id);
-        Admin CreateAdmin(string firstName, string lastName, AccDetails accDetails, Proprietary proprietaries);
+        Admin CreateAdmin(string firstName, string lastName, AccDetails accDetails, Proprietary proprietary);
         Admin DeleteAdmin(int id);
         Admin UpdateAdmin(Admin admin);
     }
