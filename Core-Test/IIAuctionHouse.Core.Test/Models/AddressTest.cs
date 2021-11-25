@@ -6,7 +6,7 @@ namespace IIAuctionHouse.Core.Test.Models
     public class AddressTest
     {
         private Address _address;
-        public AddressTest()
+        public AddressTest() 
         {
             _address = new Address();
         }
