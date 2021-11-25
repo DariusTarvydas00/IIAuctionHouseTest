@@ -8,7 +8,7 @@ namespace Core.Models
         public int Id { get; set; }
         public Address Address { get; set; }
         public int PhoneNumber { get; set; }
-        public EmailAddressAttribute Email { get; set; }
+        public string Email { get; set; }
         public DateTime AccCreationDate { get; set; }
     }
 }
