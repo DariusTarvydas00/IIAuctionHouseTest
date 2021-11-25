@@ -87,7 +87,7 @@ namespace IIAuctionHouse.Core.Test.IServices
         
         // Checks if New AccDetails is created and added to list
         [Fact]
-        public void AccDetails_NewAccDetails_IsCreatedAndAdded()
+        public void CreateAccDetails_NewAccDetails_IsCreatedAndAdded()
         {
             Assert.True(_accDetailsService.GetType().GetProperty("Address") != null);
             var mock = new Mock<IAccDetailsService>();

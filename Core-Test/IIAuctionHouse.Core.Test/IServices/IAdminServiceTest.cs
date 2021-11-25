@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Core.IServices;
 using Core.Models;
 using Moq;
@@ -24,6 +25,87 @@ namespace IIAuctionHouse.Core.Test.IServices
             mock.Setup(s => s.GetAllAdmins()).Returns(fakeAdminList);
             var service = mock.Object;
             Assert.Equal(fakeAdminList, service.GetAllAdmins());
+        }
+        
+        // Checks if GetAdminById returns selected Admin
+        [Fact]
+        public void GetAdmin_ById_ReturnsAdmin()
+        {
+            var mock = new Mock<IAdminService>();
+            var fakeAdminList = new List<Admin>();
+            var fakeAdmin = new Admin()
+            {
+                Id = 1,
+                FirstName = "Admin",
+                LastName = "Admin",
+            };
+            fakeAdminList.Add(fakeAdmin);
+            mock.Setup(s => s.GetAdminById(It.IsAny<int>())).Returns(fakeAdminList.Find(admin => admin.Id == 1));
+            var sevice = mock.Object;
+            Assert.Equal(fakeAdmin,sevice.GetAdminById(1));
+        }
+        
+        // Checks if CreateAdmin is created and stored in a list
+        [Fact]
+        public void CreateAdmin_Admin_StoresAdmin()
+        {
+            var mock = new Mock<IAdminService>();
+            var fakeAdminList = new List<Admin>();
+            var fakeAdmin = new Admin()
+            {
+                Id = 1,
+                FirstName = "Admin",
+                LastName = "Admin",
+            };
+            fakeAdminList.Add(fakeAdmin);
+            mock.Setup(s => s.CreateAdmin(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<AccDetails>(), It.IsAny<Proprietary>()))
+                .Returns(fakeAdminList.FirstOrDefault(admin => admin.Id == 1));
+            var createdAdmin = mock.Object;
+            Assert.Equal(fakeAdmin, createdAdmin.CreateAdmin("Admin", "Admin", new AccDetails(), new Proprietary()));
+        }
+        
+        // Checks if DeleteAdmin is deleted from list
+        [Fact]
+        public void DeleteAdmin_Id_DeletesAdmin()
+        {
+            var mock = new Mock<IAdminService>();
+            var fakeAdminList = new List<Admin>();
+            var fakeAdmin = new Admin()
+            {
+                Id = 1,
+                FirstName = "Admin",
+                LastName = "Admin",
+            };
+            fakeAdminList.Add(fakeAdmin);
+            mock.Setup(s => s.DeleteAdmin(It.IsAny<int>())).Returns(fakeAdminList.Find(admin => admin.Id == 1));
+            var sevice = mock.Object;
+            Assert.True(sevice.GetAdminById(1) == null);
+        }
+        
+        // Checks if UpdateAdmin updates Admin information
+        [Fact]
+        public void UpdateAdmin_Admin_UpdatesAdminInfo()
+        {
+            var mock = new Mock<IAdminService>();
+            var fakeAdminList = new List<Admin>();
+            var fakeAdmin = new Admin()
+            {
+                Id = 1,
+                FirstName = "NotAdmin",
+                LastName = "NotAdmin"
+            };
+            fakeAdminList.Add(fakeAdmin);
+            var updateAdmin = fakeAdminList.Find(admin => admin.Id == 1);
+            updateAdmin = new Admin()
+            {
+                Id = 1,
+                FirstName = "Admin",
+                LastName = "Admin"
+            };
+            mock.Setup(s => s.UpdateAdmin(updateAdmin))
+                .Returns(fakeAdminList.Find(admin => admin.Id == 1));
+            var service = mock.Object;
+            Assert.Equal(fakeAdmin, service.UpdateAdmin(updateAdmin));
         }
     }
 }
