@@ -19,23 +19,25 @@ namespace IIAuctionHouse.Core.Test.Models
                 Assert.NotNull(_admin);
             }
 
+            #region Admin Id property Unit Test
+        
             [Fact]
             // Checks if Admin Id property exists
-            public void Admin_Id_Exists()
+            public void Id_NoParam_Exists()
             {
                 Assert.True(_admin.GetType().GetProperty("Id") != null);
             }
             
             [Fact]
             // Checks if Admin Id is integer
-            public void Admin_Id_MustBeLong()
+            public void Id_NoParam_IsInteger()
             {
                 Assert.True(_admin.Id is int);
             }
             
             [Fact]
             // Checks if Admin Id can be assigned
-            public void Admin_SetId_StoresId()
+            public void Id_setId_StoresId()
             {
                 _admin.Id = 1;
                 Assert.Equal(1, _admin.Id);
@@ -43,23 +45,27 @@ namespace IIAuctionHouse.Core.Test.Models
             
             [Fact]
             // Checks if Admin Id can be updated
-            public void Admin_UpdateId_StoresNewId()
+            public void Id_UpdateId_StoresNewId()
             {
                 _admin.Id = 1;
                 _admin.Id = 2;
                 Assert.Equal(2, _admin.Id);
             }
 
+            #endregion
+
+            #region Admin FirstName property Unit Check
+        
             [Fact]
             // Checks if FirstName property exists
-            public void Admin_FirstName_Exists()
+            public void FirstName_NoParam_Exists()
             {
                 Assert.True(_admin.GetType().GetProperty("FirstName") != null);
             }
             
             [Fact]
             // Checks if FirstName can be assigned
-            public void Admin_SetFirstName_StoresFirstName()
+            public void FirstName_SetFirstName_StoresFirstName()
             {
                 _admin.FirstName = "John";
                 Assert.Equal("John", _admin.FirstName);
@@ -67,23 +73,27 @@ namespace IIAuctionHouse.Core.Test.Models
             
             [Fact]
             // Checks if FirstName can be updated
-            public void Admin_UpdateFirstName_StoresNewFirstName()
+            public void FirstName_UpdateFirstName_StoresNewFirstName()
             {
                 _admin.FirstName = "John";
                 _admin.FirstName = "Mark";
                 Assert.Equal("Mark", _admin.FirstName);
             }
 
+            #endregion
+
+            #region Admin LastName property UnitCheck
+            
             [Fact]
             // Checks if LastName property exists
-            public void Admin_LastName_Exists()
+            public void LastName_NoParam_Exists()
             {
                 Assert.True(_admin.GetType().GetProperty("LastName") != null);
             }
 
             [Fact]
             // Checks if LastName can be assigned
-            public void Admin_SetLastName_StoresLastName()
+            public void LastName_SetLastName_StoresLastName()
             {
                 _admin.FirstName = "John";
                 Assert.Equal("John", _admin.FirstName);
@@ -91,12 +101,14 @@ namespace IIAuctionHouse.Core.Test.Models
             
             [Fact]
             // Checks if Lastname can be updated
-            public void Admin_UpdateLastName_StoresNewLastName()
+            public void LastName_UpdateLastName_StoresNewLastName()
             {
                 _admin.LastName = "Henriksen";
                 _admin.LastName = "Johansson";
                 Assert.Equal("Johansson", _admin.LastName);
             }
+            
+            #endregion
             
             [Fact]
             /*
